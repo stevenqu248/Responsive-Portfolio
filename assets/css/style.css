@@ -1,9 +1,3 @@
-body
-{
-	background-image: url("../images/halftone.png");
-	overflow: auto;
-}
-
 body::after
 {
 	clear: both;
@@ -27,6 +21,40 @@ a.itemBanner
 	text-decoration: none;
 	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 }
+
+@media only screen and (max-width: 980px)
+{
+	body
+	{
+		background-image: url("../images/halftone.png");
+		width: 980px;
+		overflow: auto;
+	}
+}
+
+@media only screen and (max-width: 768px)
+{
+	body
+	{
+		background-image: url("../images/halftone.png");
+		overflow: auto;
+		width: 768px;
+	}
+}
+
+@media only screen and (max-width: 640px)
+{
+	body
+	{
+		background-image: url("../images/halftone.png");
+		overflow: auto;
+		width: 640px;
+	}
+}
+
+
+
+
 
 .textLinks
 {
