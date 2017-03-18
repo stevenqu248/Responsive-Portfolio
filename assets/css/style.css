@@ -1,78 +1,12 @@
-body::after
+#header
 {
-	clear: both;
-}
-
-input
-{
-	color: #777777;
-	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-}
-
-a:link, a:visited, a:hover, a:active
-{
-	color: #777777;
-	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-}
-
-a.itemBanner
-{
-	color: white;
-	text-decoration: none;
-	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-}
-
-@media only screen and (max-width: 980px)
-{
-	body
-	{
-		background-image: url("../images/halftone.png");
-		width: 980px;
-		overflow: auto;
-	}
-}
-
-@media only screen and (max-width: 768px)
-{
-	body
-	{
-		background-image: url("../images/halftone.png");
-		overflow: auto;
-		width: 768px;
-	}
-}
-
-@media only screen and (max-width: 640px)
-{
-	body
-	{
-		background-image: url("../images/halftone.png");
-		overflow: auto;
-		width: 640px;
-	}
-}
-
-
-
-
-
-.textLinks
-{
-	float: right;
-	margin-top: 20px;
-	margin-right: 50px;
-	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-}
-
-.button
-{
-	background-color: #4aaaa5;
-	width: 100px;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	border: none;
-	color: white;
-	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	width: 1280px;
+	background-color: white;
+	border-bottom-style: solid;
+	border-bottom-width: 2px;
+	border-bottom-color: #cccccc;
+	overflow: auto;
+	font-family: 'Georgia', Times, 'Times New Roman', serif;
 }
 
 .headerName
@@ -89,11 +23,25 @@ a.itemBanner
 	font-family: 'Georgia', Times, 'Times New Roman', serif;
 }
 
+.textLinks
+{
+	float: right;
+	margin-top: 20px;
+	margin-right: 50px;
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
 .portfolioItem
 {
 	float: left;
 	margin: 20px;
 	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+.portfolioImage
+{
+	width: 256px;
+	height: 256px;
 }
 
 .itemBanner
@@ -110,25 +58,22 @@ a.itemBanner
 	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 }
 
-
-#contentHeader
+body
 {
-	color: #4aaaa5;
-	padding-bottom: 15px;
-	margin-bottom: 15px;
-	border-color: #dddddd;
-	border-style: solid;
-	border-bottom-width: 1px;
-	border-left-width: 0px;
-	border-right-width: 0px;
-	border-top-width: 0px;
-	font-size: 30px;
-	font-family: 'Georgia', Times, 'Times New Roman', serif;
+	width: 1280px;
+	background-image: url("../images/halftone.png");
+	overflow: auto;
+}
+
+#profilePhoto
+{
+	width: 256px;
+	height: 256px;
 }
 
 #Content
 {
-	width: 60%;
+	width: 650px;
 	float: left;
 	background-color: white;
 	border-radius: 1px;
@@ -137,15 +82,13 @@ a.itemBanner
 	padding-right: 20px;
 	padding-left: 20px;
 	padding-bottom: 20px;
-	margin-top: 20px;
-	margin-left: 20px;
-	margin-bottom: 120px;
+	margin: 20px;
 	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 }
 
 #externalLinks
 {
-	width: 20%;
+	width: 270px;
 	float: right;
 	background-color: white;
 	padding-top: 20px;
@@ -158,7 +101,6 @@ a.itemBanner
 
 #externalLinksHeader
 {
-	text-align: center;
 	color: #4aaaa5;
 	margin-left: 20px;
 	padding-bottom: 10px;
@@ -177,27 +119,22 @@ a.itemBanner
 {
 	padding-top: 15px;
 	padding-bottom: 30px;
-	padding-left: 20%;
+	padding-left: 20px;
 	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 }
 
-#header
+body::after
 {
-	width: 100%;
-	background-color: white;
-	border-bottom-style: solid;
-	border-bottom-width: 2px;
-	border-bottom-color: #cccccc;
-	overflow: auto;
-	font-family: 'Georgia', Times, 'Times New Roman', serif;
+	clear: both;
 }
 
 #footer
 {
-	position: fixed;
+	/*position: fixed;
 	bottom: 0px;
-	left: 0px;
-	width: 100%;
+	left: 0px;*/
+	float: left;
+	width: 1280px;
 	border-top-style: solid;
 	border-top-width: 5px;
 	border-top-color: #4aaaa5;
@@ -208,4 +145,245 @@ a.itemBanner
 	font-size: 10px;
 	text-align: center;
 	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+input
+{
+	color: #777777;
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+textarea
+{
+	width: 90%;
+}
+
+a:link, a:visited, a:hover, a:active
+{
+	color: #777777;
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+a.itemBanner
+{
+	color: white;
+	text-decoration: none;
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+@media only screen and (max-width: 980px)
+{
+	#header
+	{
+		width: 980px;
+	}
+
+	body
+	{
+		/*background-color: blue;
+		background-image: none;*/
+		/*background-image: url("../images/halftone.png");*/
+		width: 980px;
+		overflow: auto;
+	}
+
+	#profilePhoto
+	{
+		margin-left: 20px;
+		width: 256px;
+		height: 256px;
+	}
+
+	#Content
+	{
+		padding: 20px;
+		margin: 20px;
+		margin-left: 100px;
+		width: 300px;
+		float: left;
+	}
+
+	#externalLinks
+	{
+		margin-right: 100px;
+	}
+
+	#footer
+	{
+		width: 980px;
+	}
+}
+
+@media only screen and (max-width: 768px)
+{
+	#header
+	{
+		width: 768px;
+	}
+
+	body
+	{
+		/*background-color: green;
+		background-image: none;*/
+		/*background-image: url("../images/halftone.png");*/
+		overflow: auto;
+		width: 768px;
+	}
+
+	#profilePhoto
+	{
+		margin-left: 0px;
+		width: 256px;
+		height: 256px;
+	}
+
+	.portfolioItem
+	{
+		margin-left: 25px;
+	}
+
+	.portfolioImage
+	{
+		width: 288px;
+		height: 256px;
+	}
+
+	.itemBanner
+	{
+		width: 288px;
+		margin-left: -288px;
+		margin-top: 200px;
+	}
+
+	#Content
+	{
+		padding: 20px;
+		margin: 20px;
+		width: 688px;
+		float: left;
+	}
+
+	#externalLinks
+	{
+		margin: 20px;
+		clear: both;
+		width: 708px;
+	}
+
+	#footer
+	{
+		width: 768px;
+	}
+}
+
+@media only screen and (max-width: 640px)
+{
+	#header
+	{
+		width: 640px;
+	}
+
+	.headerName
+	{
+		width: 640px;
+		margin: 0px;
+		padding: 0px;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		clear: both;
+		text-align: center;
+	}
+
+	.textLinks
+	{
+		width: 640px;
+		margin: 0px;
+		padding: 0px;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		clear: both;
+		text-align: center;
+	}
+
+	body
+	{
+		/*background-color: red;
+		background-image: none;*/
+		/*background-image: url("../images/halftone.png");*/
+		overflow: auto;
+		width: 640px;
+	}
+
+	.portfolioItem
+	{
+		margin-left: 20px;
+	}
+
+	#profilePhoto
+	{
+		margin-left: 20px;
+		width: 512px;
+		height: 512px;
+	}
+
+	.portfolioImage
+	{
+		width: 512px;
+		height: 512px;
+	}
+
+	.itemBanner
+	{
+		width: 512px;
+		margin-left: -512px;
+		margin-top: 400px;
+		padding-top: 25px;
+		padding-bottom: 25px;
+	}
+
+	#Content
+	{
+		padding: 20px;
+		margin: 20px;
+		width: 560px;
+		float: left;
+	}
+
+	#externalLinks
+	{
+		margin: 20px;
+		clear: both;
+		width: 580px;
+	}
+
+	#footer
+	{
+		width: 640px;
+	}
+}
+
+.button
+{
+	background-color: #4aaaa5;
+	width: 100px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border: none;
+	color: white;
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+#contentHeader
+{
+	color: #4aaaa5;
+	padding-bottom: 15px;
+	margin-bottom: 15px;
+	border-color: #dddddd;
+	border-style: solid;
+	border-bottom-width: 1px;
+	border-left-width: 0px;
+	border-right-width: 0px;
+	border-top-width: 0px;
+	font-size: 30px;
+	font-family: 'Georgia', Times, 'Times New Roman', serif;
 }
